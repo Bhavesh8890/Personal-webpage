@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavesh Kumar Parmar | Cloud & DevOps Pipeline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Inter:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Biometric Scan Overlay Removed -->
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-trail"></div>
+
+    <canvas id="matrix-bg"></canvas>
+
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <div class="uptime-widget code-font">
+            <div class="status-row"><span class="dot green"></span> API: 99.9%</div>
+            <div class="status-row"><span class="dot green"></span> DB: 100%</div>
+            <div class="status-row"><span class="dot yellow"></span> CDN: 98%</div>
+        </div>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Deployments</a>
+        <a href="#skills">Tech-Stack</a>
+        <a href="#extra">Credentials</a>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="pipeline-status">
+                <div class="status-badge"><span class="pulse"></span> CLOUD_ENGINEER_ACTIVE</div>
+                <div class="status-badge">REGION: BANGALORE_IN</div>
+                <div class="status-badge">CI/CD: STABLE</div>
+            </div>
+            <p class="code-font" style="color: var(--accent-green)">> sudo whoami</p>
+            <h1 class="hacker-text" data-value="BHAVESH KUMAR PARMAR">BHAVESH KUMAR PARMAR</h1>
+            <p class="subtitle">Cloud Engineer & DevOps Professional. Optimizing infrastructures across AWS, Azure, and
+                GCP.</p>
+
+            <div class="contact-strip code-font">
+                <a href="mailto:workwithbhaveshcc@gmail.com" class="contact-link">📧 workwithbhaveshcc@gmail.com</a>
+                <a href="tel:08890569447" class="contact-link">📞 +91 88905 69447</a>
+                <a href="https://linkedin.com/in/bhavesh8890" target="_blank" class="contact-link">🔗 LinkedIn</a>
+                <a href="https://github.com/Bhavesh8890" target="_blank" class="contact-link">🐙 GitHub</a>
+                <a href="Bhavesh_Kumar_Resume.pdf" download class="contact-link"
+                    style="border: 1px solid var(--accent-green); color: var(--accent-green);">📄 Resume</a>
+            </div>
+
+            <!-- Deploy Button -->
+            <div style="margin-top: 2rem;">
+                <button id="deploy-btn" class="deploy-btn">
+                    <span class="btn-text">🚀 INITIALIZE_CONTACT_PROTOCOL</span>
+                    <div class="btn-progress"></div>
+                </button>
+            </div>
+
+            <!-- 3D Wireframe Globe -->
+            <div class="globe-container">
+                <div class="globe">
+                    <div class="globe-sphere"></div>
+                    <div class="globe-outer-shadow"></div>
+                    <div class="globe-worldmap">
+                        <div class="globe-worldmap-back"></div>
+                        <div class="globe-worldmap-front"></div>
+                    </div>
+                    <div class="globe-inner-shadow"></div>
+                </div>
+                <div class="globe-halo"></div>
+            </div>
+
+            <div class="terminal-window" style="margin-top: 3rem;">
+                <div class="terminal-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                    <span class="terminal-title">bash — system_overview.sh</span>
+                </div>
+                <div class="terminal-body code-font" style="font-size: 0.9rem;">
+                    <p style="color: var(--accent-blue)">[INFO] Initializing summary...</p>
+                    <p>Expertise in orchestrating complex cloud migrations, automating CI/CD pipelines, and deploying
+                        AI/ML models (LLMs/RAG). Skilled in Terraform, Kubernetes, and Python. Focused on driving
+                        operational efficiency through automation.</p>
+                    <p style="color: var(--accent-green)">[SUCCESS] 30% reduction in MTTR achieved in recent projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" style="margin-top: 5rem;">
+            <div class="section-header">
+                <p>> current_role</p>
+                <h2>Industry Experience</h2>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--accent-green);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;">
+                    <div>
+                        <span class="card-tag">Feb 2025 - Present</span>
+                        <h3 style="font-size: 1.8rem;">Cloud Engineer @ Shellkode</h3>
+                    </div>
+                    <img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="AWS">
+                </div>
+
+                <ul style="margin: 1.5rem 0; list-style: none;">
+                    <li style="margin-bottom: 0.8rem;">▹ Managed multi-cloud environments (AWS, Azure, GCP), resolving
+                        100+ complex technical tickets.</li>
+                    <li style="margin-bottom: 0.8rem;">▹ Engineered mission-critical migration for medical client (GCP
+                        to AWS) resulting in 20% cost reduction.</li>
+                    <li style="margin-bottom: 0.8rem;">▹ Built serverless ETL pipelines (S3, DynamoDB, Lambda)
+                        processing 10TB+ data monthly.</li>
+                    <li style="margin-bottom: 0.8rem;">▹ Automated containerized deployments on EC2 via AWS SSM and
+                        Docker (40% time reduction).</li>
+                    <li style="margin-bottom: 0.8rem;">▹ Deployed 5+ GenAI models handling 1,000+ daily API requests in
+                        collaboration with the AI team.</li>
+                </ul>
+
+                <div class="metric-row">
+                    <div class="metric-box">
+                        <span class="metric-val">30%</span>
+                        <span class="metric-label">Reduction in MTTR</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-val">10TB+</span>
+                        <span class="metric-label">Data Monthly</span>
+                    </div>
+                    <div class="metric-box">
+                        <span class="metric-val">100+</span>
+                        <span class="metric-label">Issues Resolved</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CI/CD & IaC Zone -->
+        <section id="cicd" style="margin-top: 8rem;">
+            <div class="section-header">
+                <p>> cat .gitlab-ci.yml</p>
+                <h2>Automation Pipelines</h2>
+            </div>
+
+            <!-- Pipeline Visualizer -->
+            <div class="pipeline-container">
+                <div class="pipeline-stage" id="stage-build">
+                    <div class="stage-icon">⚙️</div>
+                    <div>BUILD</div>
+                </div>
+                <div class="connector"></div>
+                <div class="pipeline-stage" id="stage-test">
+                    <div class="stage-icon">🧪</div>
+                    <div>TEST</div>
+                </div>
+                <div class="connector"></div>
+                <div class="pipeline-stage" id="stage-security">
+                    <div class="stage-icon">🛡️</div>
+                    <div>SCAN</div>
+                </div>
+                <div class="connector"></div>
+                <div class="pipeline-stage" id="stage-deploy">
+                    <div class="stage-icon">🚀</div>
+                    <div>DEPLOY</div>
+                </div>
+            </div>
+
+            <!-- Terraform Terminal -->
+            <div class="terminal-window" style="margin-top: 3rem;">
+                <div class="terminal-header">
+                    <span class="terminal-title">terraform plan</span>
+                </div>
+                <div class="terminal-body code-font" id="terraform-output"
+                    style="height: 150px; overflow: hidden; font-size: 0.75rem; opacity: 0.8;">
+                    <!-- JS Populates -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Observability & Kubernetes Zone -->
+        <section id="observability" style="margin-top: 8rem;">
+            <div class="section-header">
+                <p>> kubectl get pods -w</p>
+                <h2>Cluster State & Observability</h2>
+            </div>
+
+            <!-- Grafana Panel -->
+            <div class="grafana-box" style="margin-bottom: 2rem;">
+                <div class="grafana-header">
+                    <span>📡 Live Traffic (Req/s)</span>
+                    <span style="color:var(--accent-green)">Last 5 mins</span>
+                </div>
+                <div style="position: relative; height: 200px; width: 100%;">
+                    <canvas id="grafana-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- K8s Self-Healing Grid -->
+            <div class="k8s-wrapper">
+                <p class="code-font" style="font-size: 0.8rem; color:#888; margin-bottom: 10px;">
+                    <span class="dot green"></span> Running
+                    <span class="dot red" style="margin-left: 10px;"></span> CrashLoopBackOff (Click to Fix)
+                </p>
+                <div class="k8s-grid" id="k8s-grid">
+                    <!-- JS Generates Pods -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" style="margin-top: 8rem;">
+            <div class="section-header">
+                <p>> deployments.log</p>
+                <h2>Featured Projects</h2>
+            </div>
+
+            <div class="grid-container">
+                <!-- Project 1 -->
+                <div class="card">
+                    <span class="card-tag">DevOps & IaC</span>
+                    <h3>Multi-Cloud CI/CD Pipeline</h3>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #bbb;">Full-scale infrastructure automation
+                        utilizing Terraform, Ansible, and Kubernetes (EKS). Integrated a comprehensive observability
+                        stack.</p>
+
+                    <div class="metric-row">
+                        <div class="metric-box" style="grid-column: span 3;">
+                            <span class="metric-val">60% Faster Releases</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-list" style="margin-top: 1rem;">
+                        <span class="skill-item">Terraform</span>
+                        <span class="skill-item">Ansible</span>
+                        <span class="skill-item">Jenkins</span>
+                        <span class="skill-item">SonarQube</span>
+                        <span class="skill-item">JFrog</span>
+                        <span class="skill-item">Prometheus</span>
+                        <span class="skill-item">Grafana</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card" id="mcp-card">
+                    <span class="card-tag">AI-Powered Cloud Ops</span>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 style="margin-bottom: 0;">AWS Resource MCP Server</h3>
+                        <span class="status-badge" style="color: var(--accent-blue); border-color: var(--accent-blue);">
+                            <span class="pulse"
+                                style="background: var(--accent-blue); box-shadow: 0 0 8px var(--accent-blue);"></span>
+                            AI Terminal
+                        </span>
+                    </div>
+
+                    <div class="terminal-window"
+                        style="margin-bottom: 1rem; border: 1px solid rgba(255,255,255,0.1); box-shadow: none; background: #0d1117;">
+                        <div class="terminal-header" style="background: #161b22; padding: 5px 10px; height: auto;">
+                            <span class="terminal-title" style="margin: 0; font-size: 0.7rem; opacity: 0.7;">mcp_agent —
+                                zsh</span>
+                        </div>
+                        <div class="terminal-body" id="mcp-output"
+                            style="padding: 1rem; height: 140px; overflow-y: hidden; font-family: 'Fira Code', monospace; font-size: 0.75rem; color: #e0e0e0;">
+                            <!-- JS types here -->
+                        </div>
+                    </div>
+
+                    <div class="metric-row">
+                        <div class="metric-box" style="grid-column: span 3;">
+                            <span class="metric-val">&lt;30s Search Time</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-list" style="margin-top: 1rem;">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Boto3</span>
+                        <span class="skill-item">Claude/GPT</span>
+                        <span class="skill-item">AWS Organizations</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card" id="devsecops-card">
+                    <span class="card-tag">DevSecOps & Automation</span>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 style="margin-bottom: 0;">Vulnerability Mgmt Dashboard</h3>
+                        <span class="status-badge"
+                            style="color: var(--accent-green); border-color: var(--accent-green);">
+                            <span class="pulse"></span> Auto-Patching Active
+                        </span>
+                    </div>
+
+                    <!-- Live Terminal Component -->
+                    <div class="terminal-window"
+                        style="margin-bottom: 1rem; border: 1px solid rgba(255,255,255,0.1); box-shadow: none; background: #000;">
+                        <div class="terminal-header" style="background: #111; padding: 5px 10px; height: auto;">
+                            <span class="terminal-title"
+                                style="margin: 0; font-size: 0.7rem; opacity: 0.7;">patch_manager.py — running</span>
+                        </div>
+                        <div class="terminal-body" id="patch-log"
+                            style="padding: 1rem; height: 120px; overflow-y: hidden; font-family: 'Fira Code', monospace; font-size: 0.75rem; color: #aaa; display: flex; flex-direction: column; justify-content: flex-end;">
+                            <!-- JS will populate this -->
+                            <div><span style="color: #666">[10:42:01]</span> Initializing vulnerability scanner...</div>
+                        </div>
+                    </div>
+
+                    <div class="metric-row">
+                        <div class="metric-box">
+                            <span class="metric-val" id="patched-count">1,420</span>
+                            <span class="metric-label">Vulns Patched</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-val">99.9%</span>
+                            <span class="metric-label">Compliance</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-val">&lt; 4h</span>
+                            <span class="metric-label">Mean Time to Patch</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-list" style="margin-top: 1rem;">
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">AWS Inspector</span>
+                        <span class="skill-item">Security Hub</span>
+                        <span class="skill-item">Lambda</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="card" id="iam-card">
+                    <span class="card-tag">Security & Compliance</span>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 style="margin-bottom: 0;">IAM Least-Privilege Auditor</h3>
+                        <span class="status-badge"
+                            style="color: var(--accent-purple); border-color: var(--accent-purple);">
+                            <span class="pulse"
+                                style="background: var(--accent-purple); box-shadow: 0 0 8px var(--accent-purple);"></span>
+                            Live Visualizer
+                        </span>
+                    </div>
+
+                    <!-- CSS/JS Animation Container -->
+                    <div class="iam-canvas-wrap">
+                        <canvas id="iam-canvas"></canvas>
+                        <div class="iam-overlay" id="iam-status">STATUS: ANALYZING PERMISSIONS...</div>
+                    </div>
+
+                    <div class="metric-row">
+                        <div class="metric-box">
+                            <span class="metric-val">100%</span>
+                            <span class="metric-label">Least Privilege</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-val">Zero</span>
+                            <span class="metric-label">Wildcard access</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-val">Auto</span>
+                            <span class="metric-label">Remediation</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-list" style="margin-top: 1rem;">
+                        <span class="skill-item">D3.js / Canvas</span>
+                        <span class="skill-item">AWS IAM Access Analyzer</span>
+                        <span class="skill-item">Neo4j Graph</span>
+                        <span class="skill-item">Policy Sentry</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="card" id="anomaly-card">
+                    <span class="card-tag">AI & Observability</span>
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 style="margin-bottom: 0;">Anomaly Detection Interface</h3>
+                        <span class="status-badge" style="color: #ff5f56; border-color: #ff5f56;">
+                            <span class="pulse" style="background: #ff5f56; box-shadow: 0 0 8px #ff5f56;"></span> Live
+                            Monitoring
+                        </span>
+                    </div>
+
+                    <div class="iam-canvas-wrap" style="height: 120px; background: #000; border-color: #333;">
+                        <canvas id="anomaly-canvas"></canvas>
+                        <div class="iam-overlay" id="anomaly-status"
+                            style="border-color: #ff5f56; color: #ff5f56; bottom: 5px; left: 5px; font-size: 0.6rem;">
+                            STATUS: MONITORING LOG STREAMS</div>
+                    </div>
+
+                    <div class="metric-row">
+                        <div class="metric-box" style="grid-column: span 3;">
+                            <span class="metric-val">Proactive Alerting</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-list" style="margin-top: 1rem;">
+                        <span class="skill-item">TensorFlow</span>
+                        <span class="skill-item">CloudWatch</span>
+                        <span class="skill-item">Kinesis</span>
+                        <span class="skill-item">OpenSearch</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Matrix -->
+        <section id="skills" style="margin-top: 8rem;">
+            <div class="section-header">
+                <p>> cat technical_skills.json</p>
+                <h2>Technical Matrix</h2>
+            </div>
+
+            <div class="terminal-window">
+                <div class="terminal-body">
+                    <div class="skills-matrix">
+                        <div class="skill-group">
+                            <h3>Cloud Platforms</h3>
+                            <div class="skill-list">
+                                <span class="skill-item">AWS (EC2, S3, Lambda, VPC)</span>
+                                <span class="skill-item">Azure (VMs, Monitor)</span>
+                                <span class="skill-item">GCP</span>
+                                <span class="skill-item">OpenStack</span>
+                                <span class="skill-item">RDS / DynamoDB</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>DevOps & Tools</h3>
+                            <div class="skill-list">
+                                <span class="skill-item">Terraform</span>
+                                <span class="skill-item">Ansible</span>
+                                <span class="skill-item">Docker</span>
+                                <span class="skill-item">Kubernetes (EKS, AKS)</span>
+                                <span class="skill-item">Jenkins</span>
+                                <span class="skill-item">GitHub Actions</span>
+                                <span class="skill-item">GitLab CI/CD</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>Security & SecOps</h3>
+                            <div class="skill-list">
+                                <span class="skill-item">AWS Security Hub</span>
+                                <span class="skill-item">Azure Sentinel</span>
+                                <span class="skill-item">IAM (Entra ID)</span>
+                                <span class="skill-item">WAF</span>
+                                <span class="skill-item">Policy & Governance</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>AI & Machine Learning</h3>
+                            <div class="skill-list">
+                                <span class="skill-item">Generative AI</span>
+                                <span class="skill-item">LLMs (GPT-4, Gemini)</span>
+                                <span class="skill-item">RAG Architecture</span>
+                                <span class="skill-item">LangChain</span>
+                                <span class="skill-item">AWS Bedrock</span>
+                                <span class="skill-item">MLOps</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>Programming</h3>
+                            <div class="skill-list">
+                                <span class="skill-item">Python</span>
+                                <span class="skill-item">Bash/Shell Scripting</span>
+                                <span class="skill-item">SQL</span>
+                                <span class="skill-item">HCL (Terraform)</span>
+                                <span class="skill-item">YAML</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3>Networking</h3>
+                            <div class="skill-list">
+                                <span class="skill-item">DNS (Route53)</span>
+                                <span class="skill-item">VPC Peering</span>
+                                <span class="skill-item">Transit Gateway</span>
+                                <span class="skill-item">CDN (CloudFront)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Architecture Drag-Drop Zone -->
+        <section id="arch-playground" style="margin-top: 5rem; margin-bottom: 5rem;">
+            <div class="section-header">
+                <p>> architecture_builder.exe</p>
+                <h2>System Design Sandbox</h2>
+            </div>
+            <div class="arch-box code-font">
+                <p style="color: #666; font-size: 0.8rem; margin-bottom: 1rem;">Drag services into the VPC to
+                    auto-deploy.</p>
+                <div class="arch-container">
+                    <div class="arch-sidebar">
+                        <div class="draggable-item" draggable="true" data-type="ec2">📦 EC2</div>
+                        <div class="draggable-item" draggable="true" data-type="lambda">⚡ Lambda</div>
+                        <div class="draggable-item" draggable="true" data-type="rds">🛢️ RDS</div>
+                        <div class="draggable-item" draggable="true" data-type="s3">🪣 S3</div>
+                    </div>
+                    <div class="drop-zone" id="vpc-zone">
+                        <span class="zone-label">VPC: 10.0.0.0/16</span>
+                        <div class="deployed-items"></div>
+                    </div>
+                </div>
+                <div id="deploy-status" style="margin-top: 10px; height: 20px; color: var(--accent-green);"></div>
+            </div>
+        </section>
+
+        <!-- Education, Certs & Leadership -->
+        <section id="extra" style="margin-top: 8rem; margin-bottom: 5rem;">
+            <div class="grid-container">
+                <!-- Certifications -->
+                <div>
+                    <div class="section-header">
+                        <p>> verify_certs</p>
+                        <h2 style="font-size: 1.8rem;">Credentials</h2>
+                    </div>
+                    <div class="card">
+                        <p style="margin-bottom: 1rem;">🎖️ <strong>AWS Certified Cloud Practitioner</strong></p>
+                        <p>🎖️ <strong>Oracle AI Vector Professional Certified</strong></p>
+                    </div>
+
+                    <div class="section-header" style="margin-top: 3rem;">
+                        <p>> academic_history</p>
+                        <h2 style="font-size: 1.8rem;">Education</h2>
+                    </div>
+                    <div class="card">
+                        <p class="card-tag">2020 — 2024</p>
+                        <h3>B.Tech in CS Engineering</h3>
+                        <p>JIET Jodhpur</p>
+                    </div>
+                </div>
+
+                <!-- Leadership -->
+                <div>
+                    <div class="section-header">
+                        <p>> management_exp</p>
+                        <h2 style="font-size: 1.8rem;">Leadership</h2>
+                    </div>
+                    <div class="card" style="margin-bottom: 1.5rem;">
+                        <h4 style="color: var(--accent-green);">President, JIET Student Council</h4>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">Managed 150+ members, led 7 major events, and
+                            secured <strong>₹20 Lakh</strong> in corporate sponsorships.</p>
+                    </div>
+                    <div class="card">
+                        <h4 style="color: var(--accent-green);">Secretary, CSE Department</h4>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">Organized 10+ hackathons and career fairs,
+                            driving a <strong>40% increase</strong> in student participation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer style="text-align: center; padding: 4rem 0; border-top: 1px solid var(--glass);">
+            <div class="server-stats code-font"
+                style="color: #666; font-size: 0.8rem; margin-bottom: 1rem; display: flex; justify-content: center; gap: 2rem;">
+                <span>CPU: <span id="cpu-stat" style="color: var(--accent-blue)">12%</span></span>
+                <span>RAM: <span id="ram-stat" style="color: var(--accent-purple)">4.2GB</span></span>
+                <span>LATENCY: <span id="net-stat" style="color: var(--accent-green)">24ms</span></span>
+            </div>
+            <p class="code-font" style="font-size: 0.8rem; color: #555;">
+                &copy; 2025 Bhavesh Kumar Parmar | BUILD_STATUS: <span
+                    style="color: var(--accent-green);">SUCCESS</span> | VERSION: 2.0.4-LTS
+            </p>
+        </footer>
+    </main>
+
+    <!-- Command Palette Overlay -->
+    <div id="cmd-overlay" class="hidden">
+        <div class="cmd-box">
+            <div class="cmd-header code-font">
+                <span>>_ COMMAND PALETTE</span>
+                <span style="opacity: 0.5;">ESC to close</span>
+            </div>
+            <input type="text" id="cmd-input" class="code-font"
+                placeholder="Type to search (e.g., 'projects', 'contact')..." autocomplete="off">
+            <div id="cmd-results" class="code-font"></div>
+        </div>
+    </div>
+
+    <canvas id="confetti-canvas"></canvas>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
