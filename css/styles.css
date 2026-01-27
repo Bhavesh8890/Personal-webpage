@@ -2585,70 +2585,7 @@ select.form-input {
     transform: scale(1.1);
 }
 
-/* Voice Control Indicator */
-.voice-indicator {
-    position: fixed;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    background: rgba(0, 0, 0, 0.9);
-    border: 2px solid var(--accent-green);
-    border-radius: 16px;
-    padding: 2rem 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    z-index: 2000;
-    box-shadow: 0 0 50px rgba(0, 255, 65, 0.3);
-}
-
-.voice-waves {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    height: 40px;
-}
-
-.voice-waves .wave {
-    width: 6px;
-    background: var(--accent-green);
-    border-radius: 3px;
-    animation: voice-wave 1s infinite ease-in-out;
-}
-
-.voice-waves .wave:nth-child(1) {
-    height: 20px;
-    animation-delay: 0s;
-}
-
-.voice-waves .wave:nth-child(2) {
-    height: 35px;
-    animation-delay: 0.2s;
-}
-
-.voice-waves .wave:nth-child(3) {
-    height: 25px;
-    animation-delay: 0.4s;
-}
-
-@keyframes voice-wave {
-
-    0%,
-    100% {
-        transform: scaleY(1);
-    }
-
-    50% {
-        transform: scaleY(0.5);
-    }
-}
-
-.voice-indicator span {
-    color: var(--accent-green);
-    font-family: 'Fira Code', monospace;
-    font-size: 0.9rem;
-}
+/* Voice control styles removed */
 
 /* Game styles removed */
 
