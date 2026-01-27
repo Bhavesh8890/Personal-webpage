@@ -1231,7 +1231,7 @@ db-cluster-primary     3/3     Running   0          30d`;
     const sendBtn = document.getElementById('chatbot-send');
     const messages = document.getElementById('chatbot-messages');
 
-    if (!toggle || !container) return;
+    if (!toggle || !container || !closeBtn) return;
 
     // Knowledge base about Bhavesh
     const knowledge = {
@@ -1253,11 +1253,15 @@ db-cluster-primary     3/3     Running   0          30d`;
     toggle.addEventListener('click', () => {
         container.classList.toggle('hidden');
         if (!container.classList.contains('hidden')) {
-            input.focus();
+            setTimeout(() => {
+                if (input) input.focus();
+            }, 100);
         }
     });
 
-    closeBtn.addEventListener('click', () => {
+    closeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
         container.classList.add('hidden');
     });
 
