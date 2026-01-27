@@ -1604,34 +1604,7 @@
     </div>
 
 
-    <!-- K8s Visualizer Modal -->
-    <div id="k8s-visualizer-modal" class="visualizer-modal hidden">
-        <div class="visualizer-container">
-            <div class="visualizer-header">
-                <h2>☸️ Live Kubernetes Cluster</h2>
-                <button id="visualizer-close" class="visualizer-close">×</button>
-            </div>
-            <div id="k8s-cluster" class="k8s-cluster">
-                <div class="cluster-namespace" id="ns-production">
-                    <span class="ns-label">namespace: production</span>
-                    <div class="pods-container" id="prod-pods"></div>
-                </div>
-                <div class="cluster-namespace" id="ns-staging">
-                    <span class="ns-label">namespace: staging</span>
-                    <div class="pods-container" id="staging-pods"></div>
-                </div>
-                <div class="cluster-namespace" id="ns-monitoring">
-                    <span class="ns-label">namespace: monitoring</span>
-                    <div class="pods-container" id="monitoring-pods"></div>
-                </div>
-            </div>
-            <div class="cluster-legend">
-                <span><span class="legend-dot running"></span> Running</span>
-                <span><span class="legend-dot pending"></span> Pending</span>
-                <span><span class="legend-dot error"></span> CrashLoopBackOff</span>
-            </div>
-        </div>
-    </div>
+
 
     <canvas id="confetti-canvas"></canvas>
     <script src="js/app.js"></script>
