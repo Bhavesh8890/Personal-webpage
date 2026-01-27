@@ -942,3 +942,114 @@ db-cluster-primary     3/3     Running   0          30d`;
         }, 5000);
     }
 })();
+
+// ============================================
+// 13. Self-Healing CI/CD AI Agent Simulation
+// ============================================
+(function () {
+    const output = document.getElementById('self-healing-output');
+    if (!output) return;
+
+    const scenarios = [
+        [
+            { text: "[GitHub Actions] Build #247 FAILED", type: "error" },
+            { text: "[AI Agent] Fetching logs via LangChain pipeline...", type: "info" },
+            { text: "[Gemini Pro] Analyzing: ModuleNotFoundError: 'requests'", type: "analyze" },
+            { text: "[AI Agent] Root cause: Missing dependency in requirements.txt", type: "warning" },
+            { text: "[Self-Heal] Adding 'requests==2.31.0' to requirements.txt", type: "fix" },
+            { text: "[GitOps] Committing fix → Triggering rebuild...", type: "success" },
+            { text: "[Pipeline] Build #248 PASSED ✓", type: "success" }
+        ],
+        [
+            { text: "[Jenkins] Pipeline 'deploy-prod' FAILED", type: "error" },
+            { text: "[AI Agent] Retrieving build context from Jenkins API...", type: "info" },
+            { text: "[Gemini Pro] Detected: ImagePullBackOff - invalid registry", type: "analyze" },
+            { text: "[AI Agent] Diagnosis: ECR login token expired", type: "warning" },
+            { text: "[Self-Heal] Refreshing ECR credentials via aws-cli", type: "fix" },
+            { text: "[K8s] Redeploying pods to cluster...", type: "success" },
+            { text: "[Pipeline] Deployment SUCCESSFUL ✓", type: "success" }
+        ],
+        [
+            { text: "[AWS CodePipeline] Stage 'Test' FAILED", type: "error" },
+            { text: "[AI Agent] Injecting logs into Gemini Pro context...", type: "info" },
+            { text: "[Gemini Pro] Test failure: AssertionError at test_api.py:42", type: "analyze" },
+            { text: "[AI Agent] Flaky test detected - 3 failures in last 10 runs", type: "warning" },
+            { text: "[Self-Heal] Quarantining flaky test, notifying team", type: "fix" },
+            { text: "[Retry] Re-running pipeline with stable test suite...", type: "success" },
+            { text: "[Pipeline] All stages PASSED ✓", type: "success" }
+        ]
+    ];
+
+    let scenarioIndex = 0;
+    let stepIndex = 0;
+
+    function getColor(type) {
+        switch (type) {
+            case 'error': return '#ff5f56';
+            case 'info': return '#00bfff';
+            case 'analyze': return '#a78bfa';
+            case 'warning': return '#ffbd2e';
+            case 'fix': return '#00ff41';
+            case 'success': return '#00ff41';
+            default: return '#888';
+        }
+    }
+
+    function addLogLine() {
+        const currentScenario = scenarios[scenarioIndex];
+
+        if (stepIndex >= currentScenario.length) {
+            // Pause after scenario completes, then reset
+            setTimeout(() => {
+                output.innerHTML = '';
+                scenarioIndex = (scenarioIndex + 1) % scenarios.length;
+                stepIndex = 0;
+                addLogLine();
+            }, 3000);
+            return;
+        }
+
+        const step = currentScenario[stepIndex];
+        const line = document.createElement('div');
+        line.style.marginBottom = '5px';
+        line.style.opacity = '0';
+        line.style.transform = 'translateX(-10px)';
+        line.style.transition = 'all 0.3s ease';
+        line.innerHTML = `<span style="color: ${getColor(step.type)}">${step.text}</span>`;
+
+        output.appendChild(line);
+
+        // Animate in
+        requestAnimationFrame(() => {
+            line.style.opacity = '1';
+            line.style.transform = 'translateX(0)';
+        });
+
+        // Keep only last 6 lines visible
+        while (output.children.length > 6) {
+            output.removeChild(output.firstChild);
+        }
+
+        stepIndex++;
+
+        // Determine delay based on step type
+        let delay = 800;
+        if (step.type === 'error') delay = 1200;
+        if (step.type === 'success') delay = 1000;
+
+        setTimeout(addLogLine, delay);
+    }
+
+    // Start animation when card is visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                addLogLine();
+                observer.disconnect();
+            }
+        });
+    });
+
+    const card = document.getElementById('self-healing-card');
+    if (card) observer.observe(card);
+})();
