@@ -1360,9 +1360,7 @@ db-cluster-primary     3/3     Running   0          30d`;
 
 // Console Easter Egg
 console.log('%c Hey there, fellow developer! 👋', 'font-size: 20px; color: #00ff41;');
-console.log('%c Looking for something interesting?', 'font-size: 14px; color: #888;');
-console.log('%c Try the Konami Code: ↑↑↓↓←→←→BA', 'font-size: 14px; color: #00b8ff;');
-console.log('%c Or type "kubectl get pods" in the command palette (Ctrl+K)', 'font-size: 14px; color: #00b8ff;');
+
 
 // ============================================
 // 25. Self-Drawing Icon Observer
