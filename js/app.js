@@ -1053,3 +1053,169 @@ db-cluster-primary     3/3     Running   0          30d`;
     const card = document.getElementById('self-healing-card');
     if (card) observer.observe(card);
 })();
+
+// ============================================
+// 14. Theme Toggle (Dark/Light Mode)
+// ============================================
+(function () {
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+
+    // Check for saved preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.classList.add('light-mode');
+    }
+
+    toggle.addEventListener('click', () => {
+        document.body.classList.toggle('light-mode');
+        const isLight = document.body.classList.contains('light-mode');
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+})();
+
+// ============================================
+// 15. GitHub Contribution Graph
+// ============================================
+(function () {
+    const grid = document.getElementById('contribution-grid');
+    if (!grid) return;
+
+    // Generate 52 weeks x 7 days = 364 days of contributions
+    const weeks = 52;
+    const daysPerWeek = 7;
+
+    for (let week = 0; week < weeks; week++) {
+        const weekCol = document.createElement('div');
+        weekCol.style.display = 'flex';
+        weekCol.style.flexDirection = 'column';
+        weekCol.style.gap = '3px';
+
+        for (let day = 0; day < daysPerWeek; day++) {
+            const dayEl = document.createElement('div');
+            dayEl.className = 'contribution-day';
+
+            // Random contribution level with some patterns
+            const rand = Math.random();
+            if (rand > 0.7) {
+                const level = Math.ceil(Math.random() * 4);
+                dayEl.classList.add(`level-${level}`);
+            }
+
+            // Recent weeks have more activity
+            if (week > 45 && rand > 0.4) {
+                const level = Math.ceil(Math.random() * 4);
+                dayEl.classList.add(`level-${level}`);
+            }
+
+            weekCol.appendChild(dayEl);
+        }
+        grid.appendChild(weekCol);
+    }
+})();
+
+// ============================================
+// 16. Contact Form Handler
+// ============================================
+(function () {
+    const form = document.getElementById('contact-form');
+    if (!form) return;
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const btn = form.querySelector('.form-submit');
+        const originalText = btn.innerHTML;
+
+        // Show sending state
+        btn.innerHTML = '<span class="btn-text">SENDING...</span>';
+        btn.disabled = true;
+
+        // Simulate sending (replace with actual form submission)
+        setTimeout(() => {
+            btn.innerHTML = '<span class="btn-text" style="color: #00ff41;">✓ MESSAGE SENT!</span>';
+
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+                form.reset();
+            }, 2000);
+        }, 1500);
+
+        // For actual submission, you would use:
+        // fetch(form.action, { method: 'POST', body: new FormData(form) });
+    });
+})();
+
+// ============================================
+// 17. Scroll-based Navigation Highlight
+// ============================================
+(function () {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('nav a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if (scrollY >= sectionTop - 300) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+})();
+
+// ============================================
+// 18. Smooth Scroll for Navigation
+// ============================================
+(function () {
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+})();
+
+// ============================================
+// 19. Animation on Scroll (Fade In)
+// ============================================
+(function () {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    // Apply to cards and sections
+    document.querySelectorAll('.case-study-card, .blog-card, .testimonial-card, .opportunity-card').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        observer.observe(el);
+    });
+})();

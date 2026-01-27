@@ -1,0 +1,11 @@
+# Robots.txt for Bhavesh Kumar Parmar Portfolio
+# https://bhavesh8890.github.io/Personal-webpage/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bhavesh8890.github.io/Personal-webpage/sitemap.xml
+
+# Disallow admin or private paths (none currently)
+# Disallow: /admin/

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Bhavesh Kumar Parmar</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230d1117'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='60' fill='%2300ff41'>B</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&family=Inter:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --accent-green: #00ff41;
+            --accent-red: #ff5f56;
+            --text-main: #e6edf3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+        }
+
+        .terminal {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .terminal-header {
+            background: #1c2128;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .red {
+            background: #ff5f56;
+        }
+
+        .yellow {
+            background: #ffbd2e;
+        }
+
+        .green {
+            background: #27c93f;
+        }
+
+        .terminal-body {
+            padding: 2rem;
+            font-family: 'Fira Code', monospace;
+            text-align: left;
+        }
+
+        .error-code {
+            font-size: 5rem;
+            font-weight: 700;
+            color: var(--accent-red);
+            font-family: 'Fira Code', monospace;
+            text-shadow: 0 0 30px rgba(255, 95, 86, 0.5);
+            animation: glitch 1s infinite;
+        }
+
+        @keyframes glitch {
+
+            0%,
+            90%,
+            100% {
+                transform: translate(0);
+            }
+
+            92% {
+                transform: translate(-2px, 2px);
+            }
+
+            94% {
+                transform: translate(2px, -2px);
+            }
+
+            96% {
+                transform: translate(-2px, -2px);
+            }
+
+            98% {
+                transform: translate(2px, 2px);
+            }
+        }
+
+        .error-message {
+            color: var(--accent-red);
+            margin-bottom: 1rem;
+        }
+
+        .suggestion {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .command {
+            color: var(--accent-green);
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            background: rgba(0, 255, 65, 0.1);
+            border: 1px solid var(--accent-green);
+            border-radius: 8px;
+            color: var(--accent-green);
+            text-decoration: none;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .back-btn:hover {
+            background: rgba(0, 255, 65, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 255, 65, 0.2);
+        }
+
+        .back-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+        }
+
+        /* Matrix Background */
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="matrix-bg"></canvas>
+
+    <div class="container">
+        <div class="error-code">404</div>
+
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+            </div>
+            <div class="terminal-body">
+                <p class="error-message">[ERROR] Resource not found</p>
+                <p class="suggestion">$ curl https://bhavesh.dev/path</p>
+                <p class="suggestion">curl: (404) The requested URL was not found on this server.</p>
+                <br>
+                <p class="suggestion">Suggestions:</p>
+                <p class="command"> → cd /home</p>
+                <p class="command"> → kubectl get pods # Check available resources</p>
+                <p class="command"> → terraform init # Maybe infrastructure issue?</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            RETURN_TO_HOME
+        </a>
+    </div>
+
+    <script>
+        // Matrix background
+        const canvas = document.getElementById('matrix-bg');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const cols = Math.floor(canvas.width / 20) + 1;
+        const ypos = Array(cols).fill(0);
+
+        function matrix() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#ff5f56';
+            ctx.font = '15pt monospace';
+
+            ypos.forEach((y, i) => {
+                const text = String.fromCharCode(Math.random() * 128);
+                ctx.fillText(text, i * 20, y);
+                if (y > 100 + Math.random() * 10000) ypos[i] = 0;
+                else ypos[i] = y + 20;
+            });
+        }
+
+        setInterval(matrix, 50);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+
+</html>

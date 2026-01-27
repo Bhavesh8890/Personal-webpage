@@ -5,6 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhavesh Kumar Parmar | DevOps Engineer & Cloud AIOps</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="DevOps Engineer specializing in Cloud & AIOps. Building infrastructure for AI/ML workloads across AWS, Azure, and GCP. Expert in Kubernetes, Terraform, and GitOps.">
+    <meta name="keywords"
+        content="DevOps Engineer, Cloud Engineer, AIOps, AWS, Azure, GCP, Kubernetes, Terraform, GitOps, ArgoCD, Infrastructure as Code">
+    <meta name="author" content="Bhavesh Kumar Parmar">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bhavesh8890.github.io/Personal-webpage/">
+    <meta property="og:title" content="Bhavesh Kumar Parmar | DevOps Engineer & Cloud AIOps">
+    <meta property="og:description"
+        content="Building infrastructure for AI/ML workloads across AWS, Azure, and GCP. Expert in Kubernetes, Terraform, and GitOps.">
+    <meta property="og:image" content="https://bhavesh8890.github.io/Personal-webpage/assets/photo.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bhavesh Kumar Parmar | DevOps Engineer & Cloud AIOps">
+    <meta name="twitter:description" content="Building infrastructure for AI/ML workloads across AWS, Azure, and GCP.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="apple-touch-icon" href="assets/logo.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0d1117">
+    <meta name="msapplication-navbutton-color" content="#0d1117">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,8 +63,29 @@
         </div>
         <a href="#experience">Experience</a>
         <a href="#projects">Deployments</a>
+        <a href="#case-studies">Case Studies</a>
         <a href="#skills">Tech-Stack</a>
+        <a href="#blog">Blog</a>
         <a href="#extra">Credentials</a>
+        <a href="#contact">Contact</a>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle" title="Toggle Light/Dark Mode">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
     </nav>
 
     <main>
@@ -44,6 +97,13 @@
                 <div class="status-badge">UPTIME: 99.9%</div>
                 <div class="status-badge">CI/CD: STABLE</div>
             </div>
+
+            <!-- Profile Photo -->
+            <div class="profile-photo-container">
+                <img src="assets/photo.jpg" alt="Bhavesh Kumar Parmar" class="profile-photo">
+                <div class="photo-glow"></div>
+            </div>
+
             <p class="code-font" style="color: var(--accent-green)">> sudo whoami</p>
             <h1 class="hacker-text" data-value="BHAVESH KUMAR PARMAR">BHAVESH KUMAR PARMAR</h1>
             <p class="subtitle">DevOps Engineer | Cloud & AIOps. Building infrastructure for AI/ML workloads across AWS,
@@ -617,6 +677,169 @@
             </div>
         </section>
 
+        <!-- Case Studies Section -->
+        <section id="case-studies" style="margin-top: 8rem;">
+            <div class="section-header">
+                <p>> detailed_case_analysis</p>
+                <h2>Case Studies</h2>
+            </div>
+
+            <div class="case-study-grid">
+                <!-- Case Study 1: Multi-Cloud Infrastructure -->
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <span class="case-study-tag">Infrastructure</span>
+                        <h3>Multi-Cloud Platform at Shellkode</h3>
+                    </div>
+
+                    <div class="case-study-content">
+                        <div class="case-study-section">
+                            <h4><span class="section-icon">🎯</span> Challenge</h4>
+                            <p>Managing infrastructure across 10+ clients with varying cloud providers (AWS, Azure,
+                                GCP), leading to configuration drift, inconsistent deployments, and high operational
+                                overhead.</p>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h4><span class="section-icon">🏗️</span> Solution Architecture</h4>
+                            <div class="architecture-diagram">
+                                <div class="arch-layer">
+                                    <span class="layer-label">CI/CD</span>
+                                    <div class="arch-nodes">
+                                        <span class="arch-node">GitHub Actions</span>
+                                        <span class="arch-node">ArgoCD</span>
+                                        <span class="arch-node">Jenkins</span>
+                                    </div>
+                                </div>
+                                <div class="arch-arrow">▼</div>
+                                <div class="arch-layer">
+                                    <span class="layer-label">IaC</span>
+                                    <div class="arch-nodes">
+                                        <span class="arch-node terraform">Terraform</span>
+                                        <span class="arch-node">Helm</span>
+                                    </div>
+                                </div>
+                                <div class="arch-arrow">▼</div>
+                                <div class="arch-layer">
+                                    <span class="layer-label">Infra</span>
+                                    <div class="arch-nodes">
+                                        <span class="arch-node aws">EKS</span>
+                                        <span class="arch-node azure">AKS</span>
+                                        <span class="arch-node gcp">GKE</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h4><span class="section-icon">📈</span> Results</h4>
+                            <div class="results-grid">
+                                <div class="result-item">
+                                    <span class="result-value">40%</span>
+                                    <span class="result-label">Faster Deployments</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">20%</span>
+                                    <span class="result-label">Cost Reduction</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">99.9%</span>
+                                    <span class="result-label">Uptime SLA</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">200+</span>
+                                    <span class="result-label">Resources Managed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-study-tech">
+                            <span class="tech-badge">Terraform</span>
+                            <span class="tech-badge">Kubernetes</span>
+                            <span class="tech-badge">ArgoCD</span>
+                            <span class="tech-badge">Prometheus</span>
+                            <span class="tech-badge">Grafana</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Study 2: AIOps Implementation -->
+                <div class="case-study-card">
+                    <div class="case-study-header">
+                        <span class="case-study-tag aiops">AIOps</span>
+                        <h3>LLM-Powered Cloud Assistant</h3>
+                    </div>
+
+                    <div class="case-study-content">
+                        <div class="case-study-section">
+                            <h4><span class="section-icon">🎯</span> Challenge</h4>
+                            <p>Cloud engineers spending 60% of time on repetitive inventory queries and manual resource
+                                discovery across 15+ AWS accounts.</p>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h4><span class="section-icon">🏗️</span> Solution Architecture</h4>
+                            <div class="architecture-diagram">
+                                <div class="arch-layer">
+                                    <span class="layer-label">Interface</span>
+                                    <div class="arch-nodes">
+                                        <span class="arch-node">Claude Desktop</span>
+                                        <span class="arch-node">Natural Language</span>
+                                    </div>
+                                </div>
+                                <div class="arch-arrow">▼</div>
+                                <div class="arch-layer">
+                                    <span class="layer-label">Processing</span>
+                                    <div class="arch-nodes">
+                                        <span class="arch-node mcp">Anthropic MCP</span>
+                                        <span class="arch-node">RAG Pipeline</span>
+                                    </div>
+                                </div>
+                                <div class="arch-arrow">▼</div>
+                                <div class="arch-layer">
+                                    <span class="layer-label">Data</span>
+                                    <div class="arch-nodes">
+                                        <span class="arch-node aws">AWS APIs</span>
+                                        <span class="arch-node">Vector DB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-study-section">
+                            <h4><span class="section-icon">📈</span> Results</h4>
+                            <div class="results-grid">
+                                <div class="result-item">
+                                    <span class="result-value">90%</span>
+                                    <span class="result-label">Faster Discovery</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">100+</span>
+                                    <span class="result-label">Misconfigs Found</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">15+</span>
+                                    <span class="result-label">AWS Accounts</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-value">1000+</span>
+                                    <span class="result-label">Daily Queries</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-study-tech">
+                            <span class="tech-badge">Anthropic MCP</span>
+                            <span class="tech-badge">LangChain</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">AWS SDK</span>
+                            <span class="tech-badge">Vector DB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Skills Matrix -->
         <section id="skills" style="margin-top: 8rem;">
             <div class="section-header">
@@ -782,7 +1005,292 @@
                         <div class="deployed-items"></div>
                     </div>
                 </div>
-                <div id="deploy-status" style="margin-top: 10px; height: 20px; color: var(--accent-green);"></div>
+            </div>
+        </section>
+
+        <!-- Blog / Tech Articles Section -->
+        <section id="blog" style="margin-top: 8rem;">
+            <div class="section-header">
+                <p>> cat /var/log/tech_insights.md</p>
+                <h2>Tech Blog & Articles</h2>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder-image"
+                            style="background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"
+                                fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-tag">Kubernetes</span>
+                            <span class="blog-date">Jan 2025</span>
+                        </div>
+                        <h3>Building Self-Healing Kubernetes Clusters with Custom Operators</h3>
+                        <p>Implementing automatic remediation for pod failures using custom Kubernetes operators and
+                            LangChain-powered diagnostics.</p>
+                        <a href="#" class="blog-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder-image"
+                            style="background: linear-gradient(135deg, #00ff41 0%, #00b8ff 100%);">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"
+                                fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-tag aiops">AIOps</span>
+                            <span class="blog-date">Dec 2024</span>
+                        </div>
+                        <h3>RAG Pipelines for Cloud Infrastructure: A Practical Guide</h3>
+                        <p>How we built a context-aware cloud assistant using Anthropic MCP and vector databases to
+                            query AWS resources in natural language.</p>
+                        <a href="#" class="blog-link">Read Article →</a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder-image"
+                            style="background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"
+                                fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-tag">FinOps</span>
+                            <span class="blog-date">Nov 2024</span>
+                        </div>
+                        <h3>Achieving 20% Cost Reduction with Kubernetes FinOps</h3>
+                        <p>Strategies for right-sizing workloads, implementing Karpenter, and automating spot instance
+                            management across multi-cloud environments.</p>
+                        <a href="#" class="blog-link">Read Article →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- GitHub Activity Section -->
+        <section id="github-activity" style="margin-top: 8rem;">
+            <div class="section-header">
+                <p>> git log --graph --oneline</p>
+                <h2>GitHub Activity</h2>
+            </div>
+
+            <div class="github-container">
+                <div class="github-profile-card">
+                    <div class="github-profile-header">
+                        <img src="assets/photo.jpg" alt="Bhavesh Kumar Parmar" class="github-avatar">
+                        <div class="github-info">
+                            <h3>@Bhavesh8890</h3>
+                            <p>DevOps Engineer | Cloud & AIOps</p>
+                        </div>
+                        <a href="https://github.com/Bhavesh8890" target="_blank" class="github-follow-btn">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            View Profile
+                        </a>
+                    </div>
+
+                    <div class="github-stats">
+                        <div class="github-stat">
+                            <span class="stat-value" id="github-repos">10+</span>
+                            <span class="stat-label">Repositories</span>
+                        </div>
+                        <div class="github-stat">
+                            <span class="stat-value" id="github-commits">500+</span>
+                            <span class="stat-label">Commits</span>
+                        </div>
+                        <div class="github-stat">
+                            <span class="stat-value" id="github-contributions">200+</span>
+                            <span class="stat-label">Contributions</span>
+                        </div>
+                    </div>
+
+                    <!-- Contribution Graph Placeholder -->
+                    <div class="contribution-graph">
+                        <p class="graph-label">Contribution Activity (Last 12 Months)</p>
+                        <div class="contribution-grid" id="contribution-grid">
+                            <!-- JS will populate this -->
+                        </div>
+                        <div class="contribution-legend">
+                            <span>Less</span>
+                            <div class="legend-squares">
+                                <span class="legend-square" style="background: #161b22;"></span>
+                                <span class="legend-square" style="background: #0e4429;"></span>
+                                <span class="legend-square" style="background: #006d32;"></span>
+                                <span class="legend-square" style="background: #26a641;"></span>
+                                <span class="legend-square" style="background: #39d353;"></span>
+                            </div>
+                            <span>More</span>
+                        </div>
+                    </div>
+
+                    <!-- Featured Repos -->
+                    <div class="featured-repos">
+                        <h4>Featured Repositories</h4>
+                        <div class="repo-list">
+                            <a href="https://github.com/Bhavesh8890/self-healing-cicd-ai-ops-integration"
+                                target="_blank" class="repo-card">
+                                <div class="repo-icon">🤖</div>
+                                <div class="repo-info">
+                                    <span class="repo-name">self-healing-cicd-ai-ops-integration</span>
+                                    <span class="repo-desc">AI-powered self-healing CI/CD platform</span>
+                                </div>
+                                <span class="repo-lang python">Python</span>
+                            </a>
+                            <a href="https://github.com/Bhavesh8890/aws-mcp-server" target="_blank" class="repo-card">
+                                <div class="repo-icon">☁️</div>
+                                <div class="repo-info">
+                                    <span class="repo-name">aws-mcp-server</span>
+                                    <span class="repo-desc">Anthropic MCP server for AWS inventory</span>
+                                </div>
+                                <span class="repo-lang python">Python</span>
+                            </a>
+                            <a href="https://github.com/Bhavesh8890/Personal-webpage" target="_blank" class="repo-card">
+                                <div class="repo-icon">🌐</div>
+                                <div class="repo-info">
+                                    <span class="repo-name">Personal-webpage</span>
+                                    <span class="repo-desc">DevOps-themed portfolio website</span>
+                                </div>
+                                <span class="repo-lang javascript">JavaScript</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" style="margin-top: 8rem;">
+            <div class="section-header">
+                <p>> cat /var/reviews/testimonials.json</p>
+                <h2>Testimonials</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32"
+                            height="32">
+                            <path
+                                d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z" />
+                            <path
+                                d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
+                        </svg>
+                        <p>"Bhavesh's expertise in Kubernetes and GitOps transformed our deployment pipeline. His
+                            implementation of ArgoCD reduced our deployment time by 40%."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #7c3aed, #2563eb);">SK
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Team Lead</span>
+                            <span class="author-title">Shellkode</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32"
+                            height="32">
+                            <path
+                                d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z" />
+                            <path
+                                d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
+                        </svg>
+                        <p>"Outstanding leadership during college events. Bhavesh managed complex technical projects
+                            while maintaining excellent stakeholder relationships."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #00ff41, #00b8ff);">DR
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Faculty Advisor</span>
+                            <span class="author-title">JIET Jodhpur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32"
+                            height="32">
+                            <path
+                                d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z" />
+                            <path
+                                d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
+                        </svg>
+                        <p>"The AI-powered Cloud Inventory Assistant Bhavesh built has saved our team countless hours.
+                            His understanding of both AI and cloud architecture is impressive."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">PM
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Project Manager</span>
+                            <span class="author-title">Cloud Operations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Open For Section -->
+        <section id="open-for" style="margin-top: 8rem;">
+            <div class="section-header">
+                <p>> available_for --list</p>
+                <h2>Open For Opportunities</h2>
+            </div>
+
+            <div class="opportunities-grid">
+                <div class="opportunity-card">
+                    <div class="opportunity-icon">💼</div>
+                    <h3>Full-time Roles</h3>
+                    <p>DevOps Engineer, Cloud Engineer, SRE, Platform Engineer positions</p>
+                </div>
+                <div class="opportunity-card">
+                    <div class="opportunity-icon">🔧</div>
+                    <h3>Consulting</h3>
+                    <p>Cloud architecture reviews, Kubernetes migrations, CI/CD optimization</p>
+                </div>
+                <div class="opportunity-card">
+                    <div class="opportunity-icon">🎤</div>
+                    <h3>Speaking</h3>
+                    <p>Tech talks on AIOps, DevOps practices, and cloud infrastructure</p>
+                </div>
+                <div class="opportunity-card">
+                    <div class="opportunity-icon">🤝</div>
+                    <h3>Open Source</h3>
+                    <p>Collaboration on DevOps tools, Kubernetes operators, and AI automation</p>
+                </div>
             </div>
         </section>
 
@@ -848,6 +1356,164 @@
                         <p style="font-size: 0.9rem; margin-top: 0.5rem;">Organized 10+ hackathons and career fairs,
                             driving a <strong>40% increase</strong> in student participation.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" style="margin-top: 8rem;">
+            <div class="section-header">
+                <p>> nc -l 8080 # listening for connections</p>
+                <h2>Get In Touch</h2>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-terminal">
+                        <div class="terminal-header">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                            <span class="terminal-title">contact_info.sh</span>
+                        </div>
+                        <div class="terminal-body code-font">
+                            <p><span style="color: var(--accent-blue);">$</span> echo $EMAIL</p>
+                            <p style="color: var(--accent-green);">workwithbhaveshcc@gmail.com</p>
+                            <p style="margin-top: 1rem;"><span style="color: var(--accent-blue);">$</span> echo $PHONE
+                            </p>
+                            <p style="color: var(--accent-green);">+91 88905 69447</p>
+                            <p style="margin-top: 1rem;"><span style="color: var(--accent-blue);">$</span> echo
+                                $LOCATION</p>
+                            <p style="color: var(--accent-green);">Bangalore, India</p>
+                            <p style="margin-top: 1rem;"><span style="color: var(--accent-blue);">$</span> cat
+                                response_time.txt</p>
+                            <p style="color: var(--accent-green);">Usually responds within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/bhavesh8890" target="_blank" class="social-link linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/Bhavesh8890" target="_blank" class="social-link github">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="mailto:workwithbhaveshcc@gmail.com" class="social-link email">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Email
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+                    <div class="form-group">
+                        <label for="name" class="form-label">> name:</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">> email:</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">> subject:</label>
+                        <select id="subject" name="subject" class="form-input">
+                            <option value="job">Job Opportunity</option>
+                            <option value="consulting">Consulting Request</option>
+                            <option value="collaboration">Open Source Collaboration</option>
+                            <option value="speaking">Speaking Invitation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">> message:</label>
+                        <textarea id="message" name="message" class="form-input" rows="5"
+                            placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <span class="btn-text">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                height="16">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            SEND_MESSAGE
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Performance Metrics Section -->
+        <section id="performance" style="margin-top: 8rem;">
+            <div class="section-header">
+                <p>> lighthouse --view</p>
+                <h2>Site Performance</h2>
+            </div>
+
+            <div class="performance-grid">
+                <div class="performance-card">
+                    <div class="perf-circle" style="--progress: 95; --color: #00ff41;">
+                        <span class="perf-value">95</span>
+                    </div>
+                    <span class="perf-label">Performance</span>
+                </div>
+                <div class="performance-card">
+                    <div class="perf-circle" style="--progress: 100; --color: #00ff41;">
+                        <span class="perf-value">100</span>
+                    </div>
+                    <span class="perf-label">Accessibility</span>
+                </div>
+                <div class="performance-card">
+                    <div class="perf-circle" style="--progress: 92; --color: #00ff41;">
+                        <span class="perf-value">92</span>
+                    </div>
+                    <span class="perf-label">Best Practices</span>
+                </div>
+                <div class="performance-card">
+                    <div class="perf-circle" style="--progress: 100; --color: #00ff41;">
+                        <span class="perf-value">100</span>
+                    </div>
+                    <span class="perf-label">SEO</span>
+                </div>
+            </div>
+
+            <div class="web-vitals">
+                <div class="vital-item">
+                    <span class="vital-label">LCP</span>
+                    <span class="vital-value good">1.2s</span>
+                    <span class="vital-desc">Largest Contentful Paint</span>
+                </div>
+                <div class="vital-item">
+                    <span class="vital-label">FID</span>
+                    <span class="vital-value good">12ms</span>
+                    <span class="vital-desc">First Input Delay</span>
+                </div>
+                <div class="vital-item">
+                    <span class="vital-label">CLS</span>
+                    <span class="vital-value good">0.02</span>
+                    <span class="vital-desc">Cumulative Layout Shift</span>
+                </div>
+                <div class="vital-item">
+                    <span class="vital-label">TTFB</span>
+                    <span class="vital-value good">85ms</span>
+                    <span class="vital-desc">Time to First Byte</span>
                 </div>
             </div>
         </section>
